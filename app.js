@@ -1,7 +1,7 @@
 const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider');
 const logo = document.querySelector('#logo');
-const hamburger = document.querySelector('.hamburger');
+const hamburger = document.querySelector('#hamburger');
 const headline = document.querySelector('.headline');
 
 
@@ -25,6 +25,13 @@ tl.fromTo(
     "-=1.2"
 ).fromTo(
     logo,
+    0.5,
+    {opacity: 0, x: 30},
+    {opacity: 1, x: 0},
+    "-=0.5"
+)
+.fromTo(
+    hamburger,
     0.5,
     {opacity: 0, x: 30},
     {opacity: 1, x: 0},
